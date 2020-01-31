@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+
+div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+@keyframes rotation {
+  0% {transform: initial;}
+  100% {transform: rotateZ(-360deg);}
+}
+
+.spinner{
+  content: url('img/spinner.png');
+  height: 10vh;
+  width: 10vh;
+  animation: rotation 1s infinite linear;
+}
+
+.image{
+  content: url('img/sloath.jpg');
+  /* opacity: 1; */
+}
